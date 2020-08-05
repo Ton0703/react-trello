@@ -1,0 +1,58 @@
+.List {
+  background: #ebecf0;
+  flex-shrink: 0;
+  width: 272px;
+  height: fit-content;
+  margin: 10px;
+  margin-right: 0;
+  border-radius: 3px;
+  padding: 10px;
+
+  .List-Title {
+    cursor: pointer;
+    padding: 4px 6px;
+    padding-right: 36px;
+    position: relative;
+    overflow-wrap: break-word;
+    font-weight: 600;
+
+    &:hover{
+      .delete{
+        opacity: 1;
+      }
+    }
+
+    .delete{
+      position: absolute;
+      top: 1px;
+      right: 5px;
+      opacity: 0;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all .3s ease;
+      
+      &:hover{
+        background-color: #f5f6f7;
+      }
+    }
+  }
+  .Toggle-Add-Card {
+    cursor: pointer;
+    padding: 5px;
+    color: #6b808c;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    &:hover {
+      background-color: rgba(9, 45, 66, 0.13);
+      color: #17394d;
+    }
+  }
+}
+
+.Toggle-Add-Card ion-icon {
+  margin-right: 2px;
+}

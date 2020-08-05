@@ -1,0 +1,42 @@
+.Edit-Card {
+  .Card {
+    min-height: 50px;
+    padding-left: 8px;
+    padding-right: 15px;
+
+    &:hover {
+      background: white;
+    }
+
+    .Edit-Card-Textarea {
+      width: 100%;
+      border: none;
+      resize: none;
+      outline: none;
+    }
+  }
+  .edit-btn{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        svg{
+            transition: all .3s ease;
+        }
+
+        &:hover{
+
+            svg{
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}
+}
